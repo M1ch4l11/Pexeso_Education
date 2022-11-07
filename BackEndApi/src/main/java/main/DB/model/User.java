@@ -1,4 +1,4 @@
-package main.model;
+package main.DB.model;
 
 public class User {
 
