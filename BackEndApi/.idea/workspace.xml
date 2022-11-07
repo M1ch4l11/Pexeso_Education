@@ -5,46 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="41cabb73-b2e8-4960-be55-48e72bfff67e" name="Changes" comment="Implement ImagesAPI... Return: objects images(Entity(Image))">
-      <change afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.5.1/checksums/checksums.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.5.1/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.5.1/dependencies-accessors/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileChanges/last-build.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.5.1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/main/DB/Repository_DAO/UserDAO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/main/DB/Service/ServiceImpl/UserServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/main/DB/Service/ServiceInterfaces/UserService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/main/DB/model/User.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/main/controller/DummyClass.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/DB/Repository_DAO/ImagesRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/DB/Repository_DAO/UserDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/DB/Service/ServiceImpl/ImagesServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/DB/Service/ServiceImpl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/DB/Service/ServiceInterfaces/ImagesService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/DB/Service/ServiceInterfaces/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/DB/model/Images.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/DataBaseConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/controller/ImagesAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HELP.md" beforeDir="false" afterPath="$PROJECT_DIR$/HELP.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/main/DB/Repository_DAO/UserDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/main/DB/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/main/DB/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/main/controller/DummyClass.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/BackEndApi/BackEndApiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/BackEndApiApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/DAO/UserDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/controller/DummyClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/controller/DummyClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/DB/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/main/BackEndApi/BackEndApiApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/main/Configurations/BackEndApiApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/DB/Repository_DAO/ImagesRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/DB/Repository_DAO/Interfaces/ImagesRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/DB/Repository_DAO/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/DB/Repository_DAO/Interfaces/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/DB/Service/ServiceImpl/ImagesServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/DB/Service/ServiceImpl/ImagesServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/DB/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/DB/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/controller/DummyClass.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,13 +95,28 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/xgelb/Desktop/Eclipse_Workspace/Pexeso_Education/BackEndApi",
+    "last_opened_file_path": "D:/_skola/Programovanie/Pexeso_Education/BackEndApi/src/main/resources",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
     "spring.configuration.checksum": "fbb88b445694152f62dcd34695f4a236"
   }
 }]]></component>
-  <component name="RunManager" selected="Spring Boot.BackEndApiApplication">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\_skola\Programovanie\Pexeso_Education\BackEndApi\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Unnamed">
+    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.controller.UsersAPI" />
+      <module name="BackEndApi.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BackEndApiApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="BackEndApi" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="main.BackEndApiApplication" />
@@ -137,12 +125,18 @@
       </method>
     </configuration>
     <configuration name="BackEndApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
       <module name="BackEndApi.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="main.BackEndApiApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Unnamed" />
+      <item itemvalue="Spring Boot.BackEndApiApplication" />
+      <item itemvalue="Spring Boot.BackEndApiApplication (1)" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -167,6 +161,14 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-core" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.persistence:jakarta.persistence-api" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.data:spring-data-commons" />
+    <option featureType="dependencySupport" implementationName="java:org.hibernate:hibernate-core" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-webmvc" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

@@ -1,4 +1,4 @@
-package main.DB.Repository_DAO;
+package main.DB.Repository_DAO.Interfaces;
 
 import main.DB.model.Images;
 import org.springframework.data.repository.CrudRepository;

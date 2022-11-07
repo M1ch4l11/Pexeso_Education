@@ -1,6 +1,6 @@
 package main.DB.Service.ServiceImpl;
 
-import main.DB.Repository_DAO.ImagesRepository;
+import main.DB.Repository_DAO.Interfaces.ImagesRepository;
 import main.DB.Service.ServiceInterfaces.ImagesService;
 import main.DB.model.Images;
 import org.springframework.beans.factory.annotation.Autowired;
