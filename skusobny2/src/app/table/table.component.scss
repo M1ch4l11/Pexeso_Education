@@ -1,0 +1,19 @@
+.table {
+  width: calc(100% - 5rem);
+  margin-left: 5rem;
+  display:flex;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#users {
+  width: 20%;
+}
+
+table, th, td {
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+th, td {
+  background-color: #96D4D4;
+}

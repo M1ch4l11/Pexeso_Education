@@ -1,0 +1,12 @@
+<div class="wrapper">
+<div class="grid p-16" [ngClass]="text == 'Level skončený' ? 'grid2' : 'grid'">
+  <app-game-card *ngFor="let c of cards; let idx=index" [data]="c" (cardClicked)="cardClicked(idx)">
+  </app-game-card>
+</div>
+<div class="Score">
+  <p class="vypis">{{text}}</p>
+<p>Score</p>
+<p>{{ myInt }}</p>
+</div>
+<app-table [data]="this.cards2"></app-table>
+</div>

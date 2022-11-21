@@ -1,0 +1,62 @@
+<div class="wrapper">
+<div class="wrapper2">
+    
+  
+
+       <table id="users" *ngFor="let item of arrays;let idx=index">
+        <p>{{arrays[idx][idx].title}}</p>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+      </tr>
+
+     <tr> 
+      <td>
+        {{arrays[idx][0].title}}
+  </td>
+      <td>
+        {{arrays[idx][0].description}}
+      </td>
+    </tr> 
+
+    <tr> 
+      <td>
+        {{arrays[idx][1].title}}
+  </td> 
+      <td>
+        {{arrays[idx][1].description}}
+      </td>
+    </tr> 
+
+    <tr> 
+      <td>
+        {{arrays[idx][2].title}}
+  </td> 
+      <td>
+        {{arrays[idx][2].description}}
+      </td>
+    </tr> 
+      
+    <tr> 
+      <td>
+        {{arrays[idx][3].title}}
+  </td>
+      <td>
+        {{arrays[idx][3].description}}
+      </td> 
+      </tr>  
+
+      </table>
+      </div>
+    </div>
+
+
+      <!--
+      <tr *ngFor="let any of animals; let idx=index"> 
+        <td>
+          {{any.title}}
+    </td>
+        <td>
+          {{any.description}}
+        </td>
+      </tr> -->

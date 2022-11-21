@@ -1,0 +1,32 @@
+<div class="menu">
+<h1 class="card-title">Levely</h1>
+<div class="card-selection">
+  <div class="card-content">
+        <a class="sidenav-nav-link" [routerLink]="['../game']" [queryParams]="{title:'animals'}"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{exact: true}"
+    >  <app-card-basic [shownImage]="url1" [shownTitle]="text1" (click)="this.tempClick(1) " ></app-card-basic>  </a>
+
+  <a class="sidenav-nav-link" [routerLink]="['../game']" [queryParams]="{title:'things1'}"
+  routerLinkActive="active"
+  [routerLinkActiveOptions]="{exact: true}"
+>  <app-card-basic [shownImage]="url2" [shownTitle]="text2" (click)="this.tempClick(2) " ></app-card-basic>  </a>
+
+  </div>
+  
+  <div class="card-content">
+    
+    <a class="sidenav-nav-link" [routerLink]="['../game']" [queryParams]="{title:'things2'}"
+    routerLinkActive="active"
+    [routerLinkActiveOptions]="{exact: true}"
+  >  <app-card-basic [shownImage]="url3" [shownTitle]="text3" (click)="this.tempClick(3) " ></app-card-basic>  </a>
+  
+  
+  <a class="sidenav-nav-link" [routerLink]="['../game']" [queryParams]="{title:'things3'}"
+  routerLinkActive="active"
+  [routerLinkActiveOptions]="{exact: true}"
+>  <app-card-basic [shownImage]="url4" [shownTitle]="text4" (click)="this.tempClick(4) " ></app-card-basic>  </a>
+  </div>
+
+</div>
+</div>

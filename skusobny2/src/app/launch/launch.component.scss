@@ -1,0 +1,59 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 150px);
+    gap: 16px;
+
+    justify-content: center;
+
+    width: calc(100% - 5rem);
+    margin-left: 5rem;
+    z-index: 0;
+    position: relative;
+    top: 0;
+    transition: all .5s ease;
+   // background: #f4f7fa;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+}
+
+.grid2 {
+width:0px;
+height:0px;
+}
+
+@media (max-width: 600px) {
+    .grid {
+        grid-template-columns: repeat(2, 150px);
+    }
+}
+
+@media (max-width: 900px) {
+    .grid {
+        grid-template-columns: repeat(2, 150px);
+        margin-left: 5rem;;
+    }
+}
+
+
+.Score {
+    width: calc(100% - 5rem);
+    margin-left: 5rem;
+}
+
+.row[_ngcontent-bld-c19]  {  //prečo nejde s app-root?
+    width: calc(100% - 5rem);
+    margin-left: 5rem;
+}
+
+.vypis {
+    font-size: 35px;
+}
+
+/*.wrapper {
+   // height:100vh; //keby 100rem, prečo sa deje?
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   align-self: center;
+}
+*/

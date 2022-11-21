@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+
+
+* {
+ box-sizing: border-box; 
+}
+
+.wrapper {
+    text-align: center;
+    align-items: center;
+}
+
+ .grid {
+    position: relative;
+ }
+
+ p {
+    font-family: 'Montserrat', sans-serif;
+ }
+
+ :root{
+   --bgColor:#007ea7;
+   --textColor: #fff;
+   --primaryColor:#003249;
+   --secondaryColor:#80ced7;
+   --tertiaryColor: #ccdbdc;
+}
+body {
+   background: var(--bgColor) ;
+   font-family: "Tahoma", Times;
+   color: var(--textColor);
+   margin: 0%;
+}
+
+.form-title{
+   text-align: center;
+   color: var(--primaryColor);
+   padding: 15px;
+   margin:0 0 30px;
+   text-decoration: underline;
+}
+.form-component{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   width: 400px;
+   padding: 40px;
+   transform: translate(-50%, -50%);
+   background: var(--secondaryColor);
+   box-sizing: border-box;
+   box-shadow: 0 15px 25px rgba(0,0,0,.6);
+   border-radius: 10px;
+}
+.form-section{
+   display: flex;
+  flex-direction: column-reverse;
+  position: relative;
+  padding-top: 1.5rem;
+}
+.input-label {
+  position: absolute;
+ top:0;
+ left: 0;
+ padding: 10px 0;
+ font-size: 16px;
+ color: var(--textColor);
+ pointer-events: none;
+ transition: .5s;
+}
+.input-field{
+   width: 100%;
+   padding: 0;
+   font-size: 16px;
+   color: var(--textColor);
+   margin-bottom: 30px;
+   border: none;
+   border-bottom: 1px solid #fff;
+   outline: none;
+   background: transparent;
+  
+}
+.input-field:focus ~ label,
+.input-field:valid ~ label {
+ top: -20px;
+ left: 0;
+ color: var(--primaryColor);
+ font-size: 12px;
+}
+.form-component .form-section {
+   position: relative;
+}
+.submit-btn{
+
+ align-items: center;
+ background-color: var(--primaryColor);
+ border: 0;
+ border-radius: 100px;
+ box-sizing: border-box;
+ color: var(--textColor);
+ cursor: pointer;
+ display: inline-flex;
+ font-size: 16px;
+ font-weight: 600;
+ justify-content: center;
+ line-height: 20px;
+ min-height: 40px;
+ min-width: 0px;
+ overflow: hidden;
+ padding: 0px;
+ padding-left: 20px;
+ padding-right: 20px;
+ text-align: center;
+ touch-action: manipulation;
+ transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+ vertical-align: middle;
+}
+
+.submit-btn:hover,
+.submit-btn:focus { 
+ background-color: var(--textColor);
+ color: var(--primaryColor);
+}
+
+
+
+
+

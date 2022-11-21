@@ -1,0 +1,28 @@
+<div class="table">
+<table id="users">
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+  </tr>
+
+  <tr *ngFor="let c of data; let idx=index"> 
+    <td>
+      {{data[idx].imageId}}
+</td>
+    <td>
+      {{data[idx].state}}
+    </td>
+  </tr>
+  <!--{{data.state}} -->
+
+<!-- <tr *ngFor = "let row of {{data}}"> 
+    <td>
+      row.imageId;
+</td>
+    <td>
+      row.state;
+    </td>
+  </tr> -->
+
+</table>
+</div>
