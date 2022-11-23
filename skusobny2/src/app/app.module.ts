@@ -16,6 +16,7 @@ import { LaunchComponent } from './launch/launch.component';
 import { CardBasicComponent } from './card-basic/card-basic.component';
 import { MyDictComponent } from './my-dict/my-dict.component';
 import { FormComponentComponent } from './form-component/form-component.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { FormComponentComponent } from './form-component/form-component.componen
     BrowserModule,
     BrowserAnimationsModule,
     MainRoutingModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

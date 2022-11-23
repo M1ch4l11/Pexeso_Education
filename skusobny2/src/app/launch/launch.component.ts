@@ -1,6 +1,7 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { CardData } from '../card-data.model';
 import { ActivatedRoute } from "@angular/router";
+import { HttpServiceService } from '../services/http-service.service';
 
 @Component({
   selector: 'app-launch',
@@ -80,7 +81,10 @@ export class LaunchComponent implements OnInit {
   
   }
 
-  constructor(private route: ActivatedRoute) { };
+  constructor(
+    private route: ActivatedRoute,
+    private HttpService: HttpServiceService,
+    ) { };
   
 
   
@@ -133,7 +137,6 @@ export class LaunchComponent implements OnInit {
   
   cardClicked(index: number): void {
     const cardInfo = this.cards[index];
-  
     if (cardInfo.state === 'default' && this.flippedCards.length < 2) {
       cardInfo.state = 'flipped';
       this.flippedCards.push(cardInfo);
@@ -166,6 +169,8 @@ export class LaunchComponent implements OnInit {
        if(this.pocet==5) {
          /*title sa pošle do back-end-u*/
          this.vypisanie();
+         // ak dosiel az sem zapise sa a plus sa musi aktualizovat observable, pre povelenie categorii...
+         this.HttpService.createNewApprovedCategory(this.title);
          }
       }
   }, 1000);
