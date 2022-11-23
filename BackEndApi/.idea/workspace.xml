@@ -4,38 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="41cabb73-b2e8-4960-be55-48e72bfff67e" name="Changes" comment="Implement api for save category and find cagtegory by name.">
-      <change afterPath="$PROJECT_DIR$/.gradle/7.5.1/checksums/md5-checksums.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.5.1/checksums/sha1-checksums.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/main/BackEndApiApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/main/DataBaseConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/main/DB/Repository_DAO/UserDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/main/DB/Service/ServiceImpl/UserServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/main/DB/Service/ServiceInterfaces/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/main/DB/model/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/main/controller/DummyClass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/DB/Repository_DAO/ImagesRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/DB/Repository_DAO/ApprovedCategoryRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/DB/Repository_DAO/UserDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/DB/Service/ServiceImpl/ImagesServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/DB/Service/ServiceImpl/ApprovedCategoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/DB/Service/ServiceImpl/UserServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/DB/Service/ServiceInterfaces/ImagesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/DB/Service/ServiceInterfaces/ApprovedCategoryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/DB/Service/ServiceInterfaces/UserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/DB/model/Images.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/DB/model/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/controller/DummyClass.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/controller/ImagesAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/controller/ApprovedCategoryAPI.java" afterDir="false" />
-    </list>
+    <list default="true" id="8a659fb7-d829-4a99-a6d5-59d786e430c0" name="Changes" comment="Implement api for save category and find cagtegory by name." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,6 +37,7 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="JpbToolWindowState">
@@ -82,7 +52,7 @@
       <map>
         <entry key="com.haulmont.jpb.jpaInspector" value="false" />
         <entry key="com.haulmont.jpb.jpaPalette" value="false" />
-        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
       </map>
     </option>
   </component>
