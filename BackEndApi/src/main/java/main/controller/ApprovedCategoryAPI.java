@@ -1,12 +1,17 @@
 package main.controller;
 
 import main.DB.Service.ServiceInterfaces.ApprovedCategoryService;
+import main.DB.Service.ServiceInterfaces.AutentLoginService;
+import main.DB.model.Category;
+import main.DB.model.Users;
 import main.DB.model.ResponseUserCategory;
 import main.DB.model.UsersCategory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.Map;
 
 @CrossOrigin(origins = "http://localhost:4200/")
 @RestController
@@ -16,9 +21,12 @@ public class ApprovedCategoryAPI  {
     @Autowired
     private ApprovedCategoryService service;
 
+    @Autowired
+    private AutentLoginService loginService;
+
     @GetMapping("/AllCategoryByName")
     public ResponseEntity getApprovedCategoryByUsername(@RequestParam String nickName ){
-        Iterable<ResponseUserCategory> response = service.getAllApprovedCategory(nickName);
+        Iterable<Category> response = service.getAllApprovedCategory(nickName);   //uprava ResponseUserCategory -> Category
         if(response == null){
             return new ResponseEntity<>(null, HttpStatus.NOT_FOUND);
         }
@@ -42,6 +50,16 @@ public class ApprovedCategoryAPI  {
             return new ResponseEntity<>(null, HttpStatus.NOT_FOUND);
         }
         return  new ResponseEntity<>(response, HttpStatus.CREATED);
+    }
+
+    @GetMapping("/run")
+    public ResponseEntity loginUser(@RequestParam Map<String,String> request){
+        System.out.println(request.get("username"));
+        Users response = loginService.autentificateUser(request.get("username"),request.get("password"));
+        if(response == null){
+            return new ResponseEntity<>(null, HttpStatus.NOT_FOUND);
+        }
+        return  new ResponseEntity<>(response, HttpStatus.OK);
     }
 
 

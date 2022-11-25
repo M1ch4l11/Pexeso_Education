@@ -1,0 +1,393 @@
+Index: ../.idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../.idea/modules.xml b/../.idea/modules.xml
+new file mode 100644
+--- /dev/null	(date 1669226323707)
++++ b/../.idea/modules.xml	(date 1669226323707)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/.idea/Pexeso_Education.iml" filepath="$PROJECT_DIR$/.idea/Pexeso_Education.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+Index: pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project xmlns=\"http://maven.apache.org/POM/4.0.0\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\r\n\txsi:schemaLocation=\"http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd\">\r\n\t<modelVersion>4.0.0</modelVersion>\r\n\t<parent>\r\n\t\t<groupId>org.springframework.boot</groupId>\r\n\t\t<artifactId>spring-boot-starter-parent</artifactId>\r\n\t\t<version>2.7.5</version>\r\n\t\t<relativePath/> <!-- lookup parent from repository -->\r\n\t</parent>\r\n\t<groupId>main</groupId>\r\n\t<artifactId>BackEndApi</artifactId>\r\n\t<version>0.0.1-SNAPSHOT</version>\r\n\t<name>BackEndApi</name>\r\n\t<description>Demo project for Spring Boot</description>\r\n\t<properties>\r\n\t\t<java.version>17</java.version>\r\n\t</properties>\r\n\t<dependencies>\r\n\r\n\t\t<dependency>\r\n\t\t\t<groupId>org.springframework.boot</groupId>\r\n\t\t\t<artifactId>spring-boot-starter-web</artifactId>\r\n\t\t</dependency>\r\n\t\t<dependency>\r\n\t\t\t<groupId>org.springframework.boot</groupId>\r\n\t\t\t<artifactId>spring-boot-starter-jdbc</artifactId>\r\n\t\t</dependency>\r\n\t\t<dependency>\r\n\t\t\t<groupId>org.springframework.boot</groupId>\r\n\t\t\t<artifactId>spring-boot-devtools</artifactId>\r\n\t\t\t<scope>runtime</scope>\r\n\t\t\t<optional>true</optional>\r\n\t\t</dependency>\r\n\t\t<dependency>\r\n\t\t\t<groupId>mysql</groupId>\r\n\t\t\t<artifactId>mysql-connector-java</artifactId>\r\n\t\t\t<scope>runtime</scope>\r\n\t\t</dependency>\r\n\t\t<dependency>\r\n\t\t\t<groupId>org.springframework.boot</groupId>\r\n\t\t\t<artifactId>spring-boot-starter-test</artifactId>\r\n\t\t\t<scope>test</scope>\r\n\t\t</dependency>\r\n\t\t<dependency>\r\n\t\t\t<groupId>org.springframework.boot</groupId>\r\n\t\t\t<artifactId>spring-boot-starter-data-jpa</artifactId>\r\n\t\t</dependency>\r\n\t</dependencies>\r\n\r\n\t<build>\r\n\t\t<plugins>\r\n\t\t\t<plugin>\r\n\t\t\t\t<groupId>org.springframework.boot</groupId>\r\n\t\t\t\t<artifactId>spring-boot-maven-plugin</artifactId>\r\n\t\t\t</plugin>\r\n\t\t</plugins>\r\n\t</build>\r\n\r\n</project>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/pom.xml b/pom.xml
+--- a/pom.xml	(revision ee073f712193d890908805614a32c0db85fda06a)
++++ b/pom.xml	(date 1669226323723)
+@@ -46,6 +46,22 @@
+ 			<groupId>org.springframework.boot</groupId>
+ 			<artifactId>spring-boot-starter-data-jpa</artifactId>
+ 		</dependency>
++
++		<!-- https://mvnrepository.com/artifact/org.hibernate.orm/hibernate-core -->
++		<dependency>
++			<groupId>org.hibernate.orm</groupId>
++			<artifactId>hibernate-core</artifactId>
++			<version>6.1.5.Final</version>
++		</dependency>
++		<!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
++		<dependency>
++			<groupId>com.google.guava</groupId>
++			<artifactId>guava</artifactId>
++			<version>17.0</version>
++		</dependency>
++
++
++
+ 	</dependencies>
+ 
+ 	<build>
+Index: src/main/java/main/DB/Repository_DAO/Implementation/UserDAO.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/main/DB/Repository_DAO/Implementation/UserDAO.java b/src/main/java/main/DB/Repository_DAO/Implementation/UserDAO.java
+new file mode 100644
+--- /dev/null	(date 1669226323723)
++++ b/src/main/java/main/DB/Repository_DAO/Implementation/UserDAO.java	(date 1669226323723)
+@@ -0,0 +1,12 @@
++package main.DB.Repository_DAO.Implementation;
++
++import main.DB.Repository_DAO.Interfaces.AbstractHibernateDao;
++import main.DB.model.User;
++
++public class UserDAO extends AbstractHibernateDao< User > implements main.DB.Repository_DAO.Interfaces.UserDAO   {
++
++    public UserDAO(){
++        setClazz(User.class);
++    }
++
++}
+Index: build/resources/main/hibernate.cfg.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/build/resources/main/hibernate.cfg.xml b/build/resources/main/hibernate.cfg.xml
+new file mode 100644
+--- /dev/null	(date 1669226323720)
++++ b/build/resources/main/hibernate.cfg.xml	(date 1669226323720)
+@@ -0,0 +1,29 @@
++<!DOCTYPE hibernate-configuration PUBLIC
++        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
++        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
++
++<hibernate-configuration>
++
++    <session-factory>
++
++        <!-- JDBC Database connection settings -->
++        <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
++        <property name="connection.url">jdbc:mysql://localhost:3306/pexeso?useSSL=false&amp;serverTimezone=UTC</property>
++        <property name="connection.username">root</property>
++        <property name="connection.password"></property>
++
++        <!-- JDBC connection pool settings ... using built-in test pool -->
++        <property name="connection.pool_size">1</property>
++
++        <!-- Select our SQL dialect -->
++        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
++
++        <!-- Echo the SQL to stdout -->
++        <property name="show_sql">true</property>
++
++		<!-- Set the current session context -->
++		<property name="current_session_context_class">thread</property>
++ 
++    </session-factory>
++
++</hibernate-configuration>
+\ No newline at end of file
+Index: src/main/java/main/controller/UsersAPI.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/main/controller/UsersAPI.java b/src/main/java/main/controller/UsersAPI.java
+new file mode 100644
+--- /dev/null	(date 1669226323727)
++++ b/src/main/java/main/controller/UsersAPI.java	(date 1669226323727)
+@@ -0,0 +1,24 @@
++package main.controller;
++
++import main.DB.Repository_DAO.Implementation.UserDAO;
++import main.DB.model.User;
++
++import java.util.ArrayList;
++import java.util.List;
++
++public class UsersAPI {
++
++    static UserDAO userDAO = new UserDAO();
++
++    public static void main(String[] args) {
++
++
++    ArrayList<User> users = new ArrayList<>();
++
++    users.addAll(userDAO.findAll());
++        System.out.println("\n\n\n USERS:" );
++    users.stream().forEach(System.out::println);
++        System.out.println("\n\n\n");
++    }
++
++}
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ExternalStorageConfigurationManager\" enabled=\"true\" />\r\n  <component name=\"FrameworkDetectionExcludesConfiguration\">\r\n    <file type=\"web\" url=\"file://$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MavenProjectsManager\">\r\n    <option name=\"originalFiles\">\r\n      <list>\r\n        <option value=\"$PROJECT_DIR$/pom.xml\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_17\" project-jdk-name=\"openjdk-19\" project-jdk-type=\"JavaSDK\" />\r\n  <component name=\"ProjectType\">\r\n    <option name=\"id\" value=\"jpab\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision ee073f712193d890908805614a32c0db85fda06a)
++++ b/.idea/misc.xml	(date 1669226323709)
+@@ -11,7 +11,7 @@
+       </list>
+     </option>
+   </component>
+-  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" project-jdk-name="openjdk-19" project-jdk-type="JavaSDK" />
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" project-jdk-name="corretto-17" project-jdk-type="JavaSDK" />
+   <component name="ProjectType">
+     <option name="id" value="jpab" />
+   </component>
+Index: .idea/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.gitignore b/.idea/.gitignore
+new file mode 100644
+--- /dev/null	(date 1669226323709)
++++ b/.idea/.gitignore	(date 1669226323709)
+@@ -0,0 +1,8 @@
++# Default ignored files
++/shelf/
++/workspace.xml
++# Editor-based HTTP Client requests
++/httpRequests/
++# Datasource local storage ignored files
++/dataSources/
++/dataSources.local.xml
+Index: src/main/java/main/DB/Repository_DAO/Interfaces/UserDAO.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/main/DB/Repository_DAO/Interfaces/UserDAO.java b/src/main/java/main/DB/Repository_DAO/Interfaces/UserDAO.java
+new file mode 100644
+--- /dev/null	(date 1669226323725)
++++ b/src/main/java/main/DB/Repository_DAO/Interfaces/UserDAO.java	(date 1669226323725)
+@@ -0,0 +1,8 @@
++package main.DB.Repository_DAO.Interfaces;
++
++import main.DB.model.User;
++
++public interface UserDAO {
++
++
++}
+Index: src/main/resources/hibernate.cfg.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/resources/hibernate.cfg.xml b/src/main/resources/hibernate.cfg.xml
+new file mode 100644
+--- /dev/null	(date 1669226323727)
++++ b/src/main/resources/hibernate.cfg.xml	(date 1669226323727)
+@@ -0,0 +1,29 @@
++<!DOCTYPE hibernate-configuration PUBLIC
++        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
++        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
++
++<hibernate-configuration>
++
++    <session-factory>
++
++        <!-- JDBC Database connection settings -->
++        <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
++        <property name="connection.url">jdbc:mysql://localhost:3306/pexeso?useSSL=false&amp;serverTimezone=UTC</property>
++        <property name="connection.username">root</property>
++        <property name="connection.password"></property>
++
++        <!-- JDBC connection pool settings ... using built-in test pool -->
++        <property name="connection.pool_size">1</property>
++
++        <!-- Select our SQL dialect -->
++        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
++
++        <!-- Echo the SQL to stdout -->
++        <property name="show_sql">true</property>
++
++		<!-- Set the current session context -->
++		<property name="current_session_context_class">thread</property>
++ 
++    </session-factory>
++
++</hibernate-configuration>
+\ No newline at end of file
+Index: src/main/java/main/DB/Repository_DAO/Interfaces/AbstractHibernateDao.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/main/DB/Repository_DAO/Interfaces/AbstractHibernateDao.java b/src/main/java/main/DB/Repository_DAO/Interfaces/AbstractHibernateDao.java
+new file mode 100644
+--- /dev/null	(date 1669226323724)
++++ b/src/main/java/main/DB/Repository_DAO/Interfaces/AbstractHibernateDao.java	(date 1669226323724)
+@@ -0,0 +1,61 @@
++package main.DB.Repository_DAO.Interfaces;
++
++import main.DB.model.User;
++import org.hibernate.Session;
++import org.hibernate.SessionFactory;
++import org.hibernate.cfg.Configuration;
++import org.springframework.beans.factory.annotation.Autowired;
++import java.io.Serializable;
++import java.util.List;
++
++public abstract class AbstractHibernateDao<T extends Serializable> {
++    private Class<T> clazz;
++
++    @Autowired
++    protected SessionFactory sessionFactory = new Configuration()
++            .configure("hibernate.cfg.xml")
++            .addAnnotatedClass(User.class)    //add all model classes here
++            .buildSessionFactory()
++            ;
++
++    public final void setClazz(final Class<T> clazzToSet) {
++        if (clazzToSet != null) {
++            clazz = clazzToSet;
++        }else throw new RuntimeException("Class is null!" + clazzToSet.toString());
++    }
++
++    // API
++    public T findOne(final long id) {
++        return (T) getCurrentSession().get(clazz, id);
++    }
++
++    public List<T> findAll() {
++        getCurrentSession().beginTransaction();
++        return getCurrentSession().createQuery("from " + clazz.getName()).list();
++    }
++
++    public T create(final T entity) {
++
++        getCurrentSession().saveOrUpdate(entity);
++        return entity;
++    }
++
++    public T update(final T entity) {
++
++        return (T) getCurrentSession().merge(entity);
++    }
++
++    public void delete(final T entity) {
++
++        getCurrentSession().delete(entity);
++    }
++
++    public void deleteById(final long entityId) {
++        final T entity = findOne(entityId);
++        delete(entity);
++    }
++
++    protected Session getCurrentSession() {
++        return sessionFactory.getCurrentSession();
++    }
++}
+Index: ../.idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../.idea/misc.xml b/../.idea/misc.xml
+new file mode 100644
+--- /dev/null	(date 1669226323707)
++++ b/../.idea/misc.xml	(date 1669226323707)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectRootManager">
++    <output url="file://$PROJECT_DIR$/out" />
++  </component>
++</project>
+\ No newline at end of file
+Index: ../.idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../.idea/vcs.xml b/../.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(date 1669226323707)
++++ b/../.idea/vcs.xml	(date 1669226323707)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: ../.idea/Pexeso_Education.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../.idea/Pexeso_Education.iml b/../.idea/Pexeso_Education.iml
+new file mode 100644
+--- /dev/null	(date 1669226323707)
++++ b/../.idea/Pexeso_Education.iml	(date 1669226323707)
+@@ -0,0 +1,9 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$" />
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: .idea/modules/BackEndApi.main.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/modules/BackEndApi.main.iml b/.idea/modules/BackEndApi.main.iml
+new file mode 100644
+--- /dev/null	(date 1669226323710)
++++ b/.idea/modules/BackEndApi.main.iml	(date 1669226323710)
+@@ -0,0 +1,12 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module version="4">
++  <component name="FacetManager">
++    <facet type="hibernate" name="Hibernate">
++      <configuration>
++        <datasource-map />
++        <naming-strategy-map />
++        <deploymentDescriptor name="hibernate.cfg.xml" url="file://$MODULE_DIR$/../../src/main/resources/hibernate.cfg.xml" />
++      </configuration>
++    </facet>
++  </component>
++</module>
+\ No newline at end of file
+diff --git a/../.idea/.gitignore b/../.idea/.gitignore
+new file mode 100644
