@@ -11,4 +11,7 @@ public class BackEndApiApplication {
 		SpringApplication.run(BackEndApiApplication.class, args);
 	}
 
+	//TODO:
+	//michalovi pripravit metodu kt. sa zavola po prihlaseni, odosle String usernickname
+	//implementovat prihlasovanie uzivatelov
 }
