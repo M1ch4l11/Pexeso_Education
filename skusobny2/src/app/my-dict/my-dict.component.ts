@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { filter, map } from 'rxjs';
 import { ResponseUserCategory } from '../interfaces/ResponseUserCategory';
 import { HttpServiceService } from '../services/http-service.service';
@@ -12,7 +13,8 @@ export class MyDictComponent implements OnInit {
   responseCategoryNameArray: string[];
 
   constructor(
-    private httpService: HttpServiceService
+    private httpService: HttpServiceService,
+    private router: Router,
   ) { }
 
   
@@ -55,8 +57,9 @@ public arrays: Array<any> = [];
   // Animals, Home, Vehicles, Planes
 
   ngOnInit(): void {
+    if(this.httpService.nickName === ''){this.router.navigate(['/products']);}
     this.httpService.getAllApprovedCategoryByName();
-    this.httpService.approvedCategory.pipe(map(array => array.map(obj => obj.categoryName))).subscribe( array => {
+    this.httpService.approvedCategory.pipe(map(array => array.map(obj => obj.name))).subscribe( array => {
         this.responseCategoryNameArray = array as string[];
         this.responseCategoryNameArray.forEach(nameCategory => {
           console.log(nameCategory);
@@ -65,6 +68,9 @@ public arrays: Array<any> = [];
           if(nameCategory === 'Vehicles'){this.arrays.push(this.things2)};
           if(nameCategory === 'Planes'){this.arrays.push( this.things3)};
         });
+      },
+      (error) => {
+        console.log(' my-dict.component.ts = pri povolenych kategorii sa nieco stalo. ');
       });
   }
 

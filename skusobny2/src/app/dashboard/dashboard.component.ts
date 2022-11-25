@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { HttpServiceService } from '../services/http-service.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -20,9 +22,13 @@ export class DashboardComponent implements OnInit {
       
     }
   
-  constructor() { }
+  constructor(
+    private httpService: HttpServiceService, 
+    private router: Router
+    ) { }
 
   ngOnInit(): void {
+    if(this.httpService.nickName === ''){this.router.navigate(['/products']);}
   }
 
 }

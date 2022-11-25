@@ -1,18 +1,25 @@
 
 <div>
-    <div class="form-component">
+    <div class="form-component" *ngIf="userHandler === ''" [hidden]="userHandler === '' ? false : true ">
         <h1 class="form-title"> Login</h1>
-      <form ngForm #login (ngSubmit)="submit(login)"> <!-- #login="ngForm" -->
+      <form [formGroup]="formLogin"  #login > 
         <div class="form-section">
            
-            <input class="input-field" type="text"  name="email"  required autofocus ngModel>
+            <input class="input-field" type="text"  name="email"  required autofocus formControlName="userName" >
             <label  class="input-label" for="email">E-mail</label>
         </div> 
         <div class="form-section">
-            <input class="input-field" type="password"  name="password" required ngModel>
+            <input class="input-field" type="password"  name="password" required formControlName="password">
             <label class="input-label" for="password">Heslo</label>
         </div>
-        <button type="submit" class="submit-btn"> Prihlásiť </button>
+        <button  class="submit-btn" (click)="doLogin()"> Prihlásiť </button>
+      </form>
+    </div>
+
+    <div class="form-component" *ngIf="userHandler !== ''" [hidden]="userHandler !== '' ? false : true">
+      <h1 class="form-title"> Profil</h1>
+      <form > 
+        <button  class="submit-btn" (click)="doLogOut()"> Odhlasit </button>
       </form>
     </div>
   </div>

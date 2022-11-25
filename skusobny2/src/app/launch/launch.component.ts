@@ -1,6 +1,6 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { CardData } from '../card-data.model';
-import { ActivatedRoute } from "@angular/router";
+import { ActivatedRoute, Router } from "@angular/router";
 import { HttpServiceService } from '../services/http-service.service';
 
 @Component({
@@ -84,12 +84,13 @@ export class LaunchComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private HttpService: HttpServiceService,
+    private router: Router,
     ) { };
   
 
   
   ngOnInit(): void { //automaticky vždy sa zavolá ngOnit, preto sa doňho vkladá setupCards
-  
+    if(this.HttpService.nickName === ''){this.router.navigate(['/products']);}
       this.route.queryParams.subscribe(
         params => {
           this.title =  params['title'];
@@ -170,6 +171,7 @@ export class LaunchComponent implements OnInit {
          /*title sa pošle do back-end-u*/
          this.vypisanie();
          // ak dosiel az sem zapise sa a plus sa musi aktualizovat observable, pre povelenie categorii...
+         console.log(this.title);
          this.HttpService.createNewApprovedCategory(this.title);
          }
       }
