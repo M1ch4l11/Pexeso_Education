@@ -17,13 +17,11 @@ public class AutentifikationLoginAPI {
     private AutentLoginService loginService;
 
     @PostMapping("/run")
-    public ResponseEntity loginUser(@RequestBody LoginAutentification login){
-        Users response = loginService.autentificateUser(login.getUsername(),login.getPassword());
-        if(response == null){
+    public ResponseEntity loginUser(@RequestBody LoginAutentification login) {
+        Users response = loginService.autentificateUser(login.getUsername(), login.getPassword());
+        if (response == null) {
             return new ResponseEntity<>(null, HttpStatus.NOT_FOUND);
         }
-        return  new ResponseEntity<>(response, HttpStatus.OK);
+        return new ResponseEntity<>(response, HttpStatus.OK);
     }
-
-
 }

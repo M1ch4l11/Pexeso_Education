@@ -7,9 +7,6 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class AutentLoginServiceImpl implements AutentLoginService {
-
-
-
     private loginRepository Repository;
 
     public AutentLoginServiceImpl(loginRepository repository) {

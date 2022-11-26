@@ -61,6 +61,4 @@ public class ApprovedCategoryAPI  {
         }
         return  new ResponseEntity<>(response, HttpStatus.OK);
     }
-
-
 }

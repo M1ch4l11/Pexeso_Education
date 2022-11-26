@@ -5,84 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8a659fb7-d829-4a99-a6d5-59d786e430c0" name="Changes" comment="26.11 - finall API">
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23__11__2022_19_11_[Changes]/AbstractHibernateDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23__11__2022_19_11_[Changes]/BackEndApiApplicationTests.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23__11__2022_19_11_[Changes]/BackEndApiApplicationTests1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23__11__2022_19_11_[Changes]/Images.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23__11__2022_19_11_[Changes]/ImagesAPI.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23__11__2022_19_11_[Changes]/ImagesRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23__11__2022_19_11_[Changes]/ImagesService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23__11__2022_19_11_[Changes]/ImagesServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23__11__2022_19_11_[Changes]/UserDAO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23__11__2022_19_11_[Changes]/UserDAO1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23__11__2022_19_11_[Changes]/UsersAPI.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23__11__2022_19_11_[Changes]/buildOutputCleanup.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23__11__2022_19_11_[Changes]/checksums.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23__11__2022_19_11_[Changes]/previous-compilation-data.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23__11__2022_19_11_[Changes]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23__11__2022_19_11__Changes_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25__11__2022_14_40_[Changes]/buildOutputCleanup.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25__11__2022_14_40_[Changes]/executionHistory.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25__11__2022_14_40_[Changes]/executionHistory.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25__11__2022_14_40_[Changes]/file-system.probe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25__11__2022_14_40_[Changes]/fileHashes.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25__11__2022_14_40_[Changes]/fileHashes.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25__11__2022_14_40_[Changes]/previous-compilation-data.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25__11__2022_14_40_[Changes]/resourceHashesCache.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25__11__2022_14_40_[Changes]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25__11__2022_14_40__Changes_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/main/DB/Repository_DAO/ApprovedCategoryRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/main/DB/Repository_DAO/CategoryRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/main/DB/Repository_DAO/UsersRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/main/DB/Repository_DAO/loginRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/main/DB/Service/ServiceImpl/ApprovedCategoryImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/main/DB/Service/ServiceImpl/AutentLoginServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/main/DB/Service/ServiceInterfaces/ApprovedCategoryService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/main/DB/Service/ServiceInterfaces/AutentLoginService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/main/DB/model/Category.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/main/DB/model/LoginAutentification.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/main/DB/model/ResponseUserCategory.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/main/DB/model/Users.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/main/DB/model/UsersCategory.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/main/controller/ApprovedCategoryAPI.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/main/controller/AutentifikationLoginAPI.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/test/main/Configurations/BackEndApiApplicationTests.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/main.Configurations.BackEndApiApplicationTests.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/test/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/test/js/report.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/main.Configurations.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/test-results/test/TEST-main.Configurations.BackEndApiApplicationTests.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/DB/Repository_DAO/CategoryRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/DB/Repository_DAO/UsersRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/DB/Repository_DAO/loginRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/DB/Service/ServiceImpl/AutentLoginServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/DB/Service/ServiceInterfaces/AutentLoginService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/DB/model/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/DB/model/LoginAutentification.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/DB/model/ResponseUserCategory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/DB/model/Users.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/DB/model/UsersCategory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/controller/AutentifikationLoginAPI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/BackEndApiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/BackEndApiApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/DB/Repository_DAO/CategoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/DB/Repository_DAO/CategoryRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/main/DB/Service/ServiceImpl/ApprovedCategoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/DB/Service/ServiceImpl/ApprovedCategoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/DB/Service/ServiceImpl/AutentLoginServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/DB/Service/ServiceImpl/AutentLoginServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/DB/Service/ServiceInterfaces/ApprovedCategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/DB/Service/ServiceInterfaces/ApprovedCategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/DataBaseConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/DataBaseConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/main/controller/ApprovedCategoryAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/controller/ApprovedCategoryAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/controller/AutentifikationLoginAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/controller/AutentifikationLoginAPI.java" afterDir="false" />
     </list>
     <list id="7627498f-0f68-4f0c-aa60-d62fe6c6e392" name="Changes by Radko" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/DB/Service/ServiceImpl/ApprovedCategoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/DB/Service/ServiceImpl/ApprovedCategoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/DB/Service/ServiceInterfaces/ApprovedCategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/DB/Service/ServiceInterfaces/ApprovedCategoryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/controller/ApprovedCategoryAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/controller/ApprovedCategoryAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/DB/Repository_DAO/UsersRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/DB/Repository_DAO/UsersRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,14 +52,15 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="com.haulmont.jpb.JpaRepository" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="WARN_ABOUT_CRLF" value="false" />
   </component>
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
@@ -134,32 +77,6 @@
         <entry key="com.haulmont.jpb.jpaStructure" value="true" />
       </map>
     </option>
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/main/java/main/controller/ApprovedCategoryAPI.java">
-      <ranges>
-        <range start1="3" end1="3" start2="3" end2="6" changelist="8a659fb7-d829-4a99-a6d5-59d786e430c0" />
-        <range start1="10" end1="10" start2="13" end2="15" changelist="8a659fb7-d829-4a99-a6d5-59d786e430c0" />
-        <range start1="18" end1="18" start2="23" end2="26" changelist="8a659fb7-d829-4a99-a6d5-59d786e430c0" />
-        <range start1="20" end1="21" start2="28" end2="29" changelist="7627498f-0f68-4f0c-aa60-d62fe6c6e392" />
-        <range start1="46" end1="46" start2="54" end2="64" changelist="8a659fb7-d829-4a99-a6d5-59d786e430c0" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/main/java/main/DB/Service/ServiceImpl/ApprovedCategoryImpl.java">
-      <ranges>
-        <range start1="4" end1="4" start2="4" end2="5" changelist="7627498f-0f68-4f0c-aa60-d62fe6c6e392" />
-        <range start1="7" end1="7" start2="8" end2="9" changelist="8a659fb7-d829-4a99-a6d5-59d786e430c0" />
-        <range start1="16" end1="16" start2="18" end2="19" changelist="7627498f-0f68-4f0c-aa60-d62fe6c6e392" />
-        <range start1="17" end1="18" start2="20" end2="22" changelist="7627498f-0f68-4f0c-aa60-d62fe6c6e392" />
-        <range start1="20" end1="20" start2="24" end2="25" changelist="7627498f-0f68-4f0c-aa60-d62fe6c6e392" />
-        <range start1="23" end1="34" start2="28" end2="36" changelist="7627498f-0f68-4f0c-aa60-d62fe6c6e392" />
-        <range start1="35" end1="35" start2="37" end2="47" changelist="8a659fb7-d829-4a99-a6d5-59d786e430c0" />
-        <range start1="48" end1="49" start2="60" end2="65" changelist="8a659fb7-d829-4a99-a6d5-59d786e430c0" />
-        <range start1="53" end1="54" start2="69" end2="70" changelist="8a659fb7-d829-4a99-a6d5-59d786e430c0" />
-        <range start1="59" end1="60" start2="75" end2="76" changelist="7627498f-0f68-4f0c-aa60-d62fe6c6e392" />
-        <range start1="68" end1="69" start2="84" end2="85" changelist="7627498f-0f68-4f0c-aa60-d62fe6c6e392" />
-      </ranges>
-    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -240,6 +157,7 @@
       <workItem from="1669225785230" duration="360000" />
       <workItem from="1669419169050" duration="30000" />
       <workItem from="1669419447292" duration="300000" />
+      <workItem from="1669492756665" duration="8297000" />
     </task>
     <task id="LOCAL-00001" summary="... 6.11.22 ..">
       <created>1667733860515</created>

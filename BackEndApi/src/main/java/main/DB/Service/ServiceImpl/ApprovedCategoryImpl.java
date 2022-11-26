@@ -36,16 +36,6 @@ public class ApprovedCategoryImpl implements ApprovedCategoryService {
         return usersCategories;
     }
 
-       /* List<ResponseUserCategory> responseUserCategories = new LinkedList<>();
-        List<UsersCategory> usersCategoryAll = repository.findAll();
-        List<Category> categoryAll = categoryRepository.findAll();
-        usersCategoryAll.stream()
-                .filter(usersCategory -> usersCategory .getName().equals(categoryName))
-                .forEach(usersCategory -> categoryAll.stream()
-                        .forEach(category -> {
-                              ResponseUserCategory response = processingData(usersCategory,category);
-                               if(response != null) {responseUserCategories.add(response);}}));*/
-
     @Override
     public List<UsersCategory> getAll() {
         Iterable<UsersCategory> categoryAll = repository.findAll();
@@ -72,15 +62,4 @@ public class ApprovedCategoryImpl implements ApprovedCategoryService {
         System.out.println(usersCategory);
         return repository.save(usersCategory);
     }
-
-    /*public ResponseUserCategory processingData(UsersCategory usersCategory, Category category){
-            if(usersCategory.getIdCategory() == category.getId()){
-                ResponseUserCategory responseCategory = new ResponseUserCategory();
-                responseCategory.setId(usersCategory.getId());
-                responseCategory.setCategoryName(category.getName());
-                responseCategory.setUsername(usersCategory.getName());
-                return responseCategory;
-            }
-            return null;
-        }*/
 }

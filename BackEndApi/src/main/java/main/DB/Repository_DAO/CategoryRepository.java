@@ -18,5 +18,4 @@ public interface CategoryRepository extends JpaRepository<Category, Integer> {
     //ziskaj vsetky kategorie ktory dany user ma odomknute
     @Query("select new Category(c.id, c.name) FROM Category c INNER JOIN UsersCategory uc ON c.id = uc.idCategory where uc.idUsers =?1")
     List<Category> findAllUsersCategories(int idUsers);
-
 }

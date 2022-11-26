@@ -8,15 +8,10 @@ import org.springframework.lang.Nullable;
 import java.util.List;
 
 public interface ApprovedCategoryService {
-
     @Nullable
     List<Category> getAllApprovedCategory(String category);  //uprava
-
     @Nullable
     List<UsersCategory> getAll();
-
     @Nullable
     UsersCategory postNew(String nickName, String categoryName);
-
-
 }
