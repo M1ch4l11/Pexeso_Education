@@ -3,19 +3,14 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import {  ResponseUserCategory } from '../interfaces/ResponseUserCategory';
 import { UsersCategory } from '../interfaces/users-category';
-
-// const httpOption = {
-//   headers: new HttpHeaders({
-//     'Content-type': 'application/json',
-//     'Authorization': 'Basic ' + 'Michal:miso123' ,
-//   })
-// };
+import { ResponseUserInterface } from '../interfaces/response-user.interface';
+import { FormComponentComponent } from '../form-component/form-component.component';
 
 @Injectable({providedIn: 'root'})
 export class HttpServiceService {
   approvedCategory: Observable<ResponseUserCategory[]> | undefined;
   createdUsersCategory: Observable<UsersCategory> | undefined;
-
+  responseUserAktual: object;
   // nickName treba vytiahnut
   nickName = '';
 
@@ -23,6 +18,12 @@ export class HttpServiceService {
   sendCategoryUrl = 'http://localhost:8080/category/create?nickName=';
   urlAuthentification = 'http://localhost:8080/home';
   urlAuthentificationGet = 'http://localhost:8080/login';
+  updateScoreUser = 'http://localhost:8080/score/add?username=';
+  registrationUrl = 'http://localhost:8080/registration/newUser';
+
+
+
+  responseUser: ResponseUserInterface;
 
  
 
@@ -30,14 +31,30 @@ export class HttpServiceService {
     private httpClient: HttpClient,
     ) { }
 
-  // treba nadstavit nickname
+
+    registrationUser(username: string, password: string): void {
+      this.httpClient.post<ResponseUserInterface>(this.registrationUrl, {username, password}).subscribe(response => {
+        console.log(response);
+        this.nickName = response.username;
+        this.responseUser = response;
+      });
+    }
+
+  updateUserScore(score: number): void {
+    this.httpClient.post<string>(this.updateScoreUser+this.nickName+'&score='+score,score).subscribe(response => {
+      console.log(response);
+      this.responseUser.score = Number(response);
+    },
+    (error) => {
+      console.log(error);
+      console.log(' score sa neulozilo. ');
+    })
+  }
+
   getAllApprovedCategoryByName(): void{
     this.approvedCategory =  this.httpClient.get<ResponseUserCategory[]>(this.URLCategoryByName+this.nickName);
   }
 
-  // ak dana kategoria existuje, back-end vracia hodnotu null
-  // treba nadstavit categorie v DB
-  // vytvaranie comp. => launch => 173line
   createNewApprovedCategory(catName: string): void {
     this.createdUsersCategory = this.httpClient.post<UsersCategory>(this.sendCategoryUrl+this.nickName+'&categoryName='+catName, this.nickName);
     this.createdUsersCategory.subscribe(obj => {
@@ -49,15 +66,15 @@ export class HttpServiceService {
   }
 
   autorizationUser(userName: string, password: string): void {
-    this.httpClient.post('http://localhost:8080/login/run', {username: userName, password}).subscribe( 
+    this.httpClient.post<ResponseUserInterface>('http://localhost:8080/login/run', {username: userName, password}).subscribe( 
       (response) => { 
         this.nickName = userName;
-        console.log(' Prihlaseny');
+        this.responseUser = response;
+        console.log(' Prihlaseny', response);
       },
       (error) => {
-
+        console.log(error);
       }
     )
-  // response ? console.log('Prihlaseny') : console.log('Nespavne udaje');
   }
 }

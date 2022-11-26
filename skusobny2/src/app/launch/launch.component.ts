@@ -53,7 +53,7 @@ export class LaunchComponent implements OnInit {
     cards: CardData[] = [];
     cards2: CardData[] = [];
     
-    myInt: number = 0; //prečo nemôže byť const???????????????????
+    myInt: number = 0; //prečo nemôže byť const??????????????????? Pretoze to nieje constanta a meni svoju hodnotu reaktivne, t.j. reaguje na zmeny (dynamicky)
   
     @Output() messageEvent = new EventEmitter<CardData>();
     message: CardData; 
@@ -90,7 +90,7 @@ export class LaunchComponent implements OnInit {
 
   
   ngOnInit(): void { //automaticky vždy sa zavolá ngOnit, preto sa doňho vkladá setupCards
-    if(this.HttpService.nickName === ''){this.router.navigate(['/products']);}
+    if(this.HttpService.nickName === ''){this.router.navigate(['/dashboard']);}
       this.route.queryParams.subscribe(
         params => {
           this.title =  params['title'];
@@ -171,9 +171,10 @@ export class LaunchComponent implements OnInit {
          /*title sa pošle do back-end-u*/
          this.vypisanie();
          // ak dosiel az sem zapise sa a plus sa musi aktualizovat observable, pre povelenie categorii...
-         console.log(this.title);
+         console.log(this.title, this.myInt);
          this.HttpService.createNewApprovedCategory(this.title);
-         }
+         this.HttpService.updateUserScore(this.myInt);
+        }
       }
   }, 1000);
   }
