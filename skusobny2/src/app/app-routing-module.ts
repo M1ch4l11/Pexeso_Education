@@ -1,8 +1,5 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-/*import { HomeComponent } from './home/home.component';     // Add your component here
-import { AboutComponent } from './about/about.component';  // Add your component here   */
-import { ProductsComponent } from './products/products.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { LaunchComponent } from './launch/launch.component';
 import { MyDictComponent } from './my-dict/my-dict.component';

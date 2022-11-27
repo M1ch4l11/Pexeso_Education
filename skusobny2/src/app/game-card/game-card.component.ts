@@ -34,6 +34,7 @@ import { CardData } from '../card-data.model';
 export class GameCardComponent implements OnInit {
 
   @Input() data: CardData;
+  
 
   @Output() cardClicked = new EventEmitter();
 

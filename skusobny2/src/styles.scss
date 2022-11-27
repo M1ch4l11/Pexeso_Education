@@ -23,12 +23,12 @@
    --bgColor:#007ea7;
    --textColor: #fff;
    --primaryColor:#003249;
-   --secondaryColor:#80ced7;
+   --secondaryColor:#003249;
    --tertiaryColor: #ccdbdc;
 }
 body {
    background: var(--bgColor) ;
-   font-family: "Tahoma", Times;
+   font-family: 'Montserrat', sans-serif;
    color: var(--textColor);
    margin: 0%;
 }

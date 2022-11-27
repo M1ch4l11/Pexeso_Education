@@ -10,10 +10,19 @@
   width: 20%;
 }
 
-table, th, td {
-  border: 1px solid white;
+ th, td {
+  border: 3px solid white;
+  border-collapse: collapse;
+}
+
+table {
+  border: 7px solid #003249;
   border-collapse: collapse;
 }
 th, td {
   background-color: #96D4D4;
+}
+
+.title {
+  color:#003249;
 }

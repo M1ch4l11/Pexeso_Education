@@ -1,8 +1,8 @@
 <div class="table">
 <table id="users">
   <tr>
-    <th>ID</th>
-    <th>Name</th>
+    <th class="title">EN</th>
+    <th class="title">SK</th>
   </tr>
 
   <tr *ngFor="let c of data; let idx=index"> 
@@ -10,7 +10,7 @@
       {{data[idx].imageId}}
 </td>
     <td>
-      {{data[idx].state}}
+      {{data[idx].preklad}}
     </td>
   </tr>
   <!--{{data.state}} -->
