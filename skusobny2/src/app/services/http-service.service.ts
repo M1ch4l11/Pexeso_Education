@@ -11,7 +11,7 @@ export class HttpServiceService {
   approvedCategory: Observable<ResponseUserCategory[]> | undefined;
   createdUsersCategory: Observable<UsersCategory> | undefined;
   responseUserAktual: object;
-  nickName = '';
+  nickName = sessionStorage.getItem('username');
 
   URLCategoryByName = 'http://localhost:8080/category/AllCategoryByName?nickName=';
   sendCategoryUrl = 'http://localhost:8080/category/create?nickName=';
@@ -58,6 +58,7 @@ export class HttpServiceService {
   }
 
   getAllApprovedCategoryByName(): void{
+    console.log(this.nickName, ' zbehlo');
     this.approvedCategory =  this.httpClient.get<ResponseUserCategory[]>(this.URLCategoryByName+this.nickName);
   }
 
@@ -85,6 +86,7 @@ export class HttpServiceService {
       },
       (error) => {
         console.log(error);
+        alert(' Nespravne meno alebo heslo :(');
       }
     )
   }

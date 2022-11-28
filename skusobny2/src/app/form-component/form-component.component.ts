@@ -71,7 +71,6 @@ export class FormComponentComponent implements OnInit {
       
     }, 1000);
     this.httpService.autorizationUser( this.formLogin.get('userName').value, this.formLogin.get('password').value);
-    console.log(this.userHandler, ' Je to tam');
     }
 
     showForm(type: string): void{

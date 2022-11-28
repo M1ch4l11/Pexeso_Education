@@ -7,12 +7,11 @@ import { FormComponentComponent } from './form-component/form-component.componen
 
 //This is my case 
 const routes: Routes = [
-    {path: '', redirectTo: 'form', pathMatch: 'full'},
+    {path: '', redirectTo: 'products', pathMatch: 'full', },
     {path: 'dashboard', component: DashboardComponent},
     {path: 'products', component: FormComponentComponent},
     {path: 'coupens', component: MyDictComponent},
     {path: 'game', component: LaunchComponent},
-    // {path:'form', component: FormComponentComponent}
 ];
 
 @NgModule({

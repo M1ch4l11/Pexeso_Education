@@ -115,13 +115,11 @@ export class LaunchComponent implements OnInit {
 
   
   ngOnInit(): void { 
-      this.route.queryParams.subscribe(
+    if(this.HttpService.nickName === ''){this.router.navigate(['/dashboard']);}  
+    this.route.queryParams.subscribe(
         params => {
           this.title =  params['title'];
-        }
-      if(this.HttpService.nickName === ''){this.router.navigate(['/dashboard']);}
-      )
-
+        })
      this.fillingCards();
      this.setupCards();
   }
@@ -189,6 +187,8 @@ export class LaunchComponent implements OnInit {
        if(this.pocet==5) {
          /*title sa pošle do back-end-u*/
          this.vypisanie();
+         this.myInt += Number(sessionStorage.getItem('score'));
+          sessionStorage.setItem('score', ''+this.myInt);
          console.log(this.title, this.myInt);
          this.HttpService.createNewApprovedCategory(this.title);
          this.HttpService.updateUserScore(this.myInt);

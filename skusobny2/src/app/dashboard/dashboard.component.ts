@@ -19,7 +19,7 @@ export class DashboardComponent implements OnInit {
     text4="Flags";
     tempClick(cardNumber : number){
       //alert("I work!" + cardNumber);
-      }
+    }
   
   constructor(
     private httpService: HttpServiceService, 

@@ -11,7 +11,8 @@ declare var anime: any;
   styleUrls: ['./my-dict.component.scss']
 })
 
-export class MyDictComponent implements AfterViewInit {
+export class MyDictComponent implements AfterViewInit, OnInit {
+  responseCategoryNameArray: string[];
 
   constructor(
    private httpService: HttpServiceService,
@@ -47,16 +48,16 @@ export class MyDictComponent implements AfterViewInit {
   }
 
   ngOnInit(): void {
-  if(sessionStorage.getItem('username') === null){this.router.navigate(['/products']);}
+    if(sessionStorage.getItem('username') === null){this.router.navigate(['/products']);}
     this.httpService.getAllApprovedCategoryByName();
     this.httpService.approvedCategory.pipe(map(array => array.map(obj => obj.name))).subscribe( array => {
         this.responseCategoryNameArray = array as string[];
         this.responseCategoryNameArray.forEach(nameCategory => {
           console.log(nameCategory);
-          if(nameCategory === 'Animals'){this.arrays.push( this.animals)};
-          if(nameCategory === 'Fruits'){this.arrays.push( this.things1)};
-          if(nameCategory === 'School items'){this.arrays.push(this.things2)};
-          if(nameCategory === 'Flags'){this.arrays.push( this.things3)};
+          if(nameCategory === 'animals'){this.arrays.push( this.animals)};
+          if(nameCategory === 'things1'){this.arrays.push( this.things1)};
+          if(nameCategory === 'things2'){this.arrays.push(this.things2)};
+          if(nameCategory === 'things3'){this.arrays.push( this.things3)};
         });
       },
       (error) => {
@@ -96,7 +97,7 @@ public things3: Array<any> = [
   { title: "Brazília", description: "Brazil" }
 ];
 
-public arrays:Array<any> = [this.animals, this.things1, this.things2, this.things3 ]; 
+public arrays:Array<any> = []; 
 
 
 }
