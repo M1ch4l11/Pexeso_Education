@@ -9,8 +9,8 @@
   border-color: #003249;
 }
 .card-component img {
-    width: 230px;
-    height: 230px;
+    width: 175px;
+    height: 170px;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
     border-bottom: 0px;
@@ -28,21 +28,17 @@
     box-shadow: 0px 0px 36px 5px rgba(0,0,0,0.66);
     transform: scale(1.1);
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 700px) {
     .card-component img {
-        width: 230px;
-        height: 230px;
-       
-        
+        width: 130px;
+        height: 130px;
     }
 }
 
 @media only screen and (min-width: 800px) {
     .card-component img {
-        width: 190px;
-        height: 190px;
-       
-        
+        width: 175px;
+        height: 170px;
     }
 }
 
@@ -50,8 +46,6 @@
     .card-component img {
         width: 350px;
         height: 350px;
-        
-        
     }
     .card-component{
         margin-top: 40px;
