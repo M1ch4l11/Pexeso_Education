@@ -1,6 +1,7 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { CardData } from '../card-data.model';
-import { ActivatedRoute } from "@angular/router";
+import { ActivatedRoute, Router } from "@angular/router";
+import { HttpServiceService } from '../services/http-service.service';
 
 @Component({
   selector: 'app-launch',
@@ -105,7 +106,11 @@ export class LaunchComponent implements OnInit {
   
   }
 
-  constructor(private route: ActivatedRoute) { };
+  constructor(
+  private route: ActivatedRoute,
+  private HttpService: HttpServiceService,
+  private router: Router,
+  ) { };
   
 
   
@@ -114,6 +119,7 @@ export class LaunchComponent implements OnInit {
         params => {
           this.title =  params['title'];
         }
+      if(this.HttpService.nickName === ''){this.router.navigate(['/dashboard']);}
       )
 
      this.fillingCards();
@@ -183,6 +189,9 @@ export class LaunchComponent implements OnInit {
        if(this.pocet==5) {
          /*title sa pošle do back-end-u*/
          this.vypisanie();
+         console.log(this.title, this.myInt);
+         this.HttpService.createNewApprovedCategory(this.title);
+         this.HttpService.updateUserScore(this.myInt);
          }
       }
   }, 1000);
@@ -199,6 +208,3 @@ export class LaunchComponent implements OnInit {
   
     }
   }
-  
-  
-  

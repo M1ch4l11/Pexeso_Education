@@ -12,7 +12,7 @@ const routes: Routes = [
     {path: 'products', component: FormComponentComponent},
     {path: 'coupens', component: MyDictComponent},
     {path: 'game', component: LaunchComponent},
-    {path:'form', component: FormComponentComponent}
+    // {path:'form', component: FormComponentComponent}
 ];
 
 @NgModule({

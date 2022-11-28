@@ -1,4 +1,8 @@
 import { Component, OnInit, AfterViewInit, NgModule } from '@angular/core';
+import { Router } from '@angular/router';
+import { filter, map } from 'rxjs';
+import { ResponseUserCategory } from '../interfaces/ResponseUserCategory';
+import { HttpServiceService } from '../services/http-service.service';
 declare var anime: any;                               
 
 @Component({
@@ -9,7 +13,10 @@ declare var anime: any;
 
 export class MyDictComponent implements AfterViewInit {
 
-  constructor() { }
+  constructor(
+   private httpService: HttpServiceService,
+    private router: Router,
+  ) { }
 
   ngAfterViewInit(): void {
     const textWrapper = document.querySelector('.an-1');
@@ -40,6 +47,21 @@ export class MyDictComponent implements AfterViewInit {
   }
 
   ngOnInit(): void {
+  if(sessionStorage.getItem('username') === null){this.router.navigate(['/products']);}
+    this.httpService.getAllApprovedCategoryByName();
+    this.httpService.approvedCategory.pipe(map(array => array.map(obj => obj.name))).subscribe( array => {
+        this.responseCategoryNameArray = array as string[];
+        this.responseCategoryNameArray.forEach(nameCategory => {
+          console.log(nameCategory);
+          if(nameCategory === 'Animals'){this.arrays.push( this.animals)};
+          if(nameCategory === 'Fruits'){this.arrays.push( this.things1)};
+          if(nameCategory === 'School items'){this.arrays.push(this.things2)};
+          if(nameCategory === 'Flags'){this.arrays.push( this.things3)};
+        });
+      },
+      (error) => {
+        console.log(' my-dict.component.ts = pri povolenych kategorii sa nieco stalo. ');
+      });
   }
 
   public animals: Array<any> = [
