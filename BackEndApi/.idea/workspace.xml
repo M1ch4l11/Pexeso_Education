@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8a659fb7-d829-4a99-a6d5-59d786e430c0" name="Changes" comment="Feat: Implement query registration and update score">
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/main/BackEndApiApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/main/BackEndApiApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/main/DB/Service/ServiceImpl/ApprovedCategoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/main/DB/Service/ServiceImpl/ApprovedCategoryImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/main/DB/Service/ServiceImpl/AutentLoginServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/main/DB/Service/ServiceImpl/AutentLoginServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/main/DB/Service/ServiceImpl/UserScoreServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/main/DB/Service/ServiceImpl/UserScoreServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/main/DataBaseConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/main/DataBaseConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/DB/Repository_DAO/UsersRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/DB/Repository_DAO/UsersRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/DB/Service/ServiceImpl/ApprovedCategoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/DB/Service/ServiceImpl/ApprovedCategoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/DB/Service/ServiceInterfaces/ApprovedCategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/DB/Service/ServiceInterfaces/ApprovedCategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/DB/model/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/DB/model/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/DB/model/ResponseUserCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/DB/model/ResponseUserCategory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/DB/model/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/DB/model/Users.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/DB/model/UsersCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/DB/model/UsersCategory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/DataBaseConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/DataBaseConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/controller/ApprovedCategoryAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/controller/ApprovedCategoryAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/controller/AutentifikationLoginAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/controller/AutentifikationLoginAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/controller/RegistrationAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/controller/RegistrationAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/controller/ScoreAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/controller/ScoreAPI.java" afterDir="false" />
+    </list>
+    <list id="7627498f-0f68-4f0c-aa60-d62fe6c6e392" name="Changes by Radko" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="com.haulmont.jpb.JpaRepository" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="WARN_ABOUT_CRLF" value="false" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2HAgIPHpe4lZVc9NfIZmnMUP3hu" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/xgelb/Desktop/Eclipse_Workspace/Pexeso_Education/BackEndApi&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;73ac06201dd2df7515d720328a31fe46&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="main.controller" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.BackEndApiApplication">
+    <configuration name="BackEndApiApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="BackEndApi" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="main.BackEndApiApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BackEndApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="BackEndApi.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="main.BackEndApiApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.BackEndApiApplication" />
+      <item itemvalue="Spring Boot.BackEndApiApplication (1)" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8a659fb7-d829-4a99-a6d5-59d786e430c0" name="Changes" comment="Implement api for save category and find cagtegory by name." />
+      <created>1667733222326</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1667733222326</updated>
+      <workItem from="1667733223580" duration="5731000" />
+      <workItem from="1667741399594" duration="13523000" />
+      <workItem from="1668016484275" duration="4388000" />
+      <workItem from="1668022444960" duration="707000" />
+      <workItem from="1668872657232" duration="3000" />
+      <workItem from="1669048856621" duration="12149000" />
+      <workItem from="1669066663706" duration="4845000" />
+      <workItem from="1669116266961" duration="14090000" />
+      <workItem from="1669201057476" duration="632000" />
+      <workItem from="1669225785230" duration="360000" />
+      <workItem from="1669419169050" duration="30000" />
+      <workItem from="1669419447292" duration="300000" />
+      <workItem from="1669492756665" duration="8548000" />
+      <workItem from="1669558646990" duration="1608000" />
+      <workItem from="1669620290112" duration="5488000" />
+    </task>
+    <task id="LOCAL-00001" summary="... 6.11.22 ..">
+      <created>1667733860515</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1667733860515</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Implement ImagesAPI... Return: objects images(Entity(Image))">
+      <created>1667754833568</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1667754833568</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="... 6.11.22 .." />
+    <MESSAGE value="Implement ImagesAPI... // Return: objects images(Entity(Image))" />
+    <MESSAGE value="Implement ImagesAPI... //Return: objects images(Entity(Image))" />
+    <MESSAGE value="Implement ImagesAPI... Return: objects images(Entity(Image))" />
+    <MESSAGE value="Implement api for save category and find cagtegory by name." />
+    <MESSAGE value="26.11 - finall API" />
+    <MESSAGE value="Feat: Implement query registration and update score" />
+    <option name="LAST_COMMIT_MESSAGE" value="Feat: Implement query registration and update score" />
+  </component>
+</project>
