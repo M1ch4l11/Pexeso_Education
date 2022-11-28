@@ -1,15 +1,8 @@
 package main.DB.model;
-
-
-import org.springframework.lang.Nullable;
-
 import javax.persistence.*;
-
 @Entity
 @Table(name = "users_has_categories")
 public class UsersCategory {
-
-
      @Id
      @GeneratedValue(strategy = GenerationType.IDENTITY)
      @Column(name = "id")

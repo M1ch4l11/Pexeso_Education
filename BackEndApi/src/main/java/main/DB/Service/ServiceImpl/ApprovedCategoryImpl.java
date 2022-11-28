@@ -5,7 +5,6 @@ import main.DB.Repository_DAO.CategoryRepository;
 import main.DB.Repository_DAO.UsersRepository;
 import main.DB.Service.ServiceInterfaces.ApprovedCategoryService;
 import main.DB.model.Category;
-import main.DB.model.ResponseUserCategory;
 import main.DB.model.Users;
 import main.DB.model.UsersCategory;
 import org.springframework.stereotype.Service;
@@ -27,12 +26,10 @@ public class ApprovedCategoryImpl implements ApprovedCategoryService {
 
     @Override
     public List<Category> getAllApprovedCategory(String username) {
-
         //ziskaj vsetky kategorie ktore dany user uz dokoncil
         int id = usersRepository.findByName(username).getId();
         List<Category> usersCategories = new ArrayList<>();
         usersCategories = categoryRepository.findAllUsersCategories(id);
-
         return usersCategories;
     }
 
@@ -43,8 +40,6 @@ public class ApprovedCategoryImpl implements ApprovedCategoryService {
         return usersCategoryMakeList;
     }
 
-
-    // processing
     @Override
     public UsersCategory postNew(String nickName, String categoryName) {
         Category responseCategory = categoryRepository.findByName(categoryName);

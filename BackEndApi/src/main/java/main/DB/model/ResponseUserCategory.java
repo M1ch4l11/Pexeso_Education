@@ -1,8 +1,5 @@
 package main.DB.model;
-
-
 import javax.persistence.*;
-
 @Entity
 public class ResponseUserCategory {
 

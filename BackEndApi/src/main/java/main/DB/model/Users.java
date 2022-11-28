@@ -1,11 +1,8 @@
 package main.DB.model;
-
 import javax.persistence.*;
-
 @Entity
 @Table(name = "users")
 public class Users {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY )
     int id;

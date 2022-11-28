@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a659fb7-d829-4a99-a6d5-59d786e430c0" name="Changes" comment="26.11 - finall API">
+    <list default="true" id="8a659fb7-d829-4a99-a6d5-59d786e430c0" name="Changes" comment="Feat: Implement query registration and update score">
       <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -13,19 +13,26 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/main/BackEndApiApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/main/BackEndApiApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/main/DB/Service/ServiceImpl/ApprovedCategoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/main/DB/Service/ServiceImpl/ApprovedCategoryImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/main/DB/Service/ServiceImpl/AutentLoginServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/main/DB/Service/ServiceImpl/AutentLoginServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/main/DB/Service/ServiceImpl/UserScoreServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/main/DB/Service/ServiceImpl/UserScoreServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/main/DataBaseConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/main/DataBaseConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/BackEndApiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/BackEndApiApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/DB/Repository_DAO/CategoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/DB/Repository_DAO/CategoryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/DB/Repository_DAO/UsersRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/DB/Repository_DAO/UsersRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/main/DB/Service/ServiceImpl/ApprovedCategoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/DB/Service/ServiceImpl/ApprovedCategoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/DB/Service/ServiceImpl/AutentLoginServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/DB/Service/ServiceImpl/AutentLoginServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/main/DB/Service/ServiceInterfaces/ApprovedCategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/DB/Service/ServiceInterfaces/ApprovedCategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/DB/model/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/DB/model/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/DB/model/ResponseUserCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/DB/model/ResponseUserCategory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/DB/model/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/DB/model/Users.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/DB/model/UsersCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/DB/model/UsersCategory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/main/DataBaseConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/DataBaseConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/main/controller/ApprovedCategoryAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/controller/ApprovedCategoryAPI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/main/controller/AutentifikationLoginAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/controller/AutentifikationLoginAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/controller/RegistrationAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/controller/RegistrationAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/controller/ScoreAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/controller/ScoreAPI.java" afterDir="false" />
     </list>
-    <list id="7627498f-0f68-4f0c-aa60-d62fe6c6e392" name="Changes by Radko" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/DB/Repository_DAO/UsersRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/DB/Repository_DAO/UsersRepository.java" afterDir="false" />
-    </list>
+    <list id="7627498f-0f68-4f0c-aa60-d62fe6c6e392" name="Changes by Radko" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -74,7 +81,7 @@
       <map>
         <entry key="com.haulmont.jpb.jpaInspector" value="false" />
         <entry key="com.haulmont.jpb.jpaPalette" value="false" />
-        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
       </map>
     </option>
   </component>
@@ -157,7 +164,9 @@
       <workItem from="1669225785230" duration="360000" />
       <workItem from="1669419169050" duration="30000" />
       <workItem from="1669419447292" duration="300000" />
-      <workItem from="1669492756665" duration="8297000" />
+      <workItem from="1669492756665" duration="8548000" />
+      <workItem from="1669558646990" duration="1608000" />
+      <workItem from="1669620290112" duration="5488000" />
     </task>
     <task id="LOCAL-00001" summary="... 6.11.22 ..">
       <created>1667733860515</created>
@@ -197,6 +206,7 @@
     <MESSAGE value="Implement ImagesAPI... Return: objects images(Entity(Image))" />
     <MESSAGE value="Implement api for save category and find cagtegory by name." />
     <MESSAGE value="26.11 - finall API" />
-    <option name="LAST_COMMIT_MESSAGE" value="26.11 - finall API" />
+    <MESSAGE value="Feat: Implement query registration and update score" />
+    <option name="LAST_COMMIT_MESSAGE" value="Feat: Implement query registration and update score" />
   </component>
 </project>

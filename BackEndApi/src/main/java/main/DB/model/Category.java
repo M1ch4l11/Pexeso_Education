@@ -1,18 +1,15 @@
 package main.DB.model;
 
 import javax.persistence.*;
-
 @Entity
 @Table(name = "categories")
 public class Category {
-
     public Category() {
     }
     public Category(int id, String name) {
         this.id = id;
         this.name = name;
     }
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY )
     @Column(name = "id")
@@ -20,7 +17,6 @@ public class Category {
 
     @Column(name = "cat_name")
     String name;
-
 
     public int getId() {
         return id;

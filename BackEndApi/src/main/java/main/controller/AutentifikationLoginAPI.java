@@ -12,10 +12,8 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/login")
 public class AutentifikationLoginAPI {
-
     @Autowired
     private AutentLoginService loginService;
-
     @PostMapping("/run")
     public ResponseEntity loginUser(@RequestBody LoginAutentification login) {
         Users response = loginService.autentificateUser(login.getUsername(), login.getPassword());

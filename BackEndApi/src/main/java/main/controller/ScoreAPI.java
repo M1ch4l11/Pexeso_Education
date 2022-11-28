@@ -1,10 +1,6 @@
 package main.controller;
 
-import main.DB.Repository_DAO.UsersRepository;
 import main.DB.Service.ServiceImpl.UserScoreServiceImpl;
-import main.DB.Service.ServiceInterfaces.AutentLoginService;
-import main.DB.model.Users;
-import main.DB.model.LoginAutentification;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -14,11 +10,8 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/score")
 public class ScoreAPI {
-
     @Autowired
     UserScoreServiceImpl userScoreService;
-
-
     @PostMapping("/add")
      public ResponseEntity addScoreToUser(@RequestParam("username")String username, @RequestParam("score")String scoreText) {
         Integer resultScore;
