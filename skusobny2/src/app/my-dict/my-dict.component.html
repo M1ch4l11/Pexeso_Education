@@ -1,11 +1,15 @@
-<h1 class="card-title">Slovniky</h1>
 <div class="wrapper">
-<div class="wrapper2" >
-       <table id="users" *ngFor="let item of arrays;let idx=index">
-        <p>{{arrays[idx][idx].title}}</p>
+<div class="wrapper2">
+    
+  <p id="vypis" class="an-1">
+    Tvoje témy...</p>
+  <div id="grid-col">
+    <div class="cell" *ngFor="let item of arrays;let idx=index">
+       <table id="users">
+        <p div="header">{{arrays[idx][0].titleTopic}}</p>
       <tr>
-        <th>ID</th>
-        <th>Name</th>
+        <th class="title">SK</th>
+        <th class="title">preklad</th>
       </tr>
 
      <tr> 
@@ -44,17 +48,17 @@
       </td> 
       </tr>  
 
-      </table>
-      </div>
-    </div>
-
-
-      <!--
-      <tr *ngFor="let any of animals; let idx=index"> 
+      <tr> 
         <td>
-          {{any.title}}
+          {{arrays[idx][4].title}}
     </td>
         <td>
-          {{any.description}}
-        </td>
-      </tr> -->
+          {{arrays[idx][4].description}}
+        </td> 
+        </tr>  
+
+      </table>
+    </div>
+      </div>
+    </div>
+    </div>

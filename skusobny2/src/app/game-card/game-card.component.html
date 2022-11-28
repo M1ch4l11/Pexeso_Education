@@ -1,8 +1,8 @@
 <div class="card" (click)="cardClicked.emit()" [@cardFlip]="data.state">
     <div class="back">
-        <img src="assets/animals.jpg">
+        <img [src]="data.front">
     </div>
     <div class="front">
-        <img src="assets/let.png"> <!--pozrieť!!!!-->
+        <img [src]="data.path"> 
     </div>
 </div>

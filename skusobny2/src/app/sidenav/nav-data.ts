@@ -6,8 +6,6 @@ export const navbarData = [
     
     },
     
-   // fa-thin fa-right-from-bracket
-    
     {
         routeLink: 'coupens',
         icon: 'fal fa-book-open',

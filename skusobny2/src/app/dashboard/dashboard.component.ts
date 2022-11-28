@@ -8,19 +8,18 @@ import { HttpServiceService } from '../services/http-service.service';
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit {
-    title = 'options-page';
-    url1= "../../assets/placeholder.png";
-    url2="../../assets/placeholder.png";
-    url3="../../assets/placeholder.png";
-    url4="../../assets/nice.jpg";
-    text1="Hra1";
-    text2="Hra2";
-    text3="Hra3";
-    text4="Hra4";
+       title = 'options-page';
+    url1= "../../assets/animalsNext1.jpg";
+    url2="../../assets/apple.png";
+    url3="../../assets/school.jpg";
+    url4="../../assets/R.png";
+    text1="Animals";
+    text2="Fruits";
+    text3="School items";
+    text4="Flags";
     tempClick(cardNumber : number){
       //alert("I work!" + cardNumber);
-      
-    }
+      }
   
   constructor(
     private httpService: HttpServiceService, 

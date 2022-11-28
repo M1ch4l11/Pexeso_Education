@@ -13,37 +13,58 @@ export class LaunchComponent implements OnInit {
    title="";
    pocet: number = 0;
    text="";
+   sound="";
   
     cardImages1 = [
-      'pDGNBK9A0sk',
-      'fYDrhbVlV1E',
-      'qoXgaF27zBc',
-      'b9drVB7xIOI',
-      'TQ-q5WAVHj0'
+      {id: 'cat', sound:'../assets/cat.mp3', path:'../assets/Cat.png', preklad:'mačka', front:'../assets/animals.jpg' },
+      {id: 'cat', sound:'../assets/cat.mp3', path:'../assets/Macka.png', preklad:'mačka' ,front:'../assets/animals.jpg'}, 
+      {id: 'cow', sound:'../assets/cow.mp3', path:'../assets/Cow.png', preklad:'krava',front:'../assets/animals.jpg' },
+      {id: 'cow', sound:'../assets/cow.mp3', path:'../assets/Krava.png', preklad:'krava',front:'../assets/animals.jpg' },
+      {id: 'lion', sound:'../assets/lion.mp3', path:'../assets/Lion.png', preklad: 'lev',front:'../assets/animals.jpg' },
+      {id: 'lion', sound:'../assets/lion.mp3', path:'../assets/Lev.png', preklad: 'lev',front:'../assets/animals.jpg' },
+      {id: 'panda', sound:'../assets/panda.mp3', path:'../assets/Panda.png', preklad: 'panda',front:'../assets/animals.jpg' },
+      {id: 'panda', sound:'../assets/panda.mp3', path:'../assets/Panda.png', preklad: 'panda',front:'../assets/animals.jpg' },
+      {id: 'dog', sound:'../assets/dog.mp3', path:'../assets/Dog.png', preklad: 'pes',front:'../assets/animals.jpg' },
+      {id: 'dog', sound:'../assets/dog.mp3', path:'../assets/Pes.png', preklad: 'pes',front:'../assets/animals.jpg' },
     ];
 
     cardImages2 = [
-      'pDGNBK9A0sk',
-      'fYDrhbVlV1E',
-      'qoXgaF27zBc',
-      'b9drVB7xIOI',
-      'TQ-q5WAVHj0'
+      {id: 'grape', sound:'../assets/grape.mp3', path:'../assets/grape1.jpg', preklad:'hrozno' ,front:'../assets/fruits.png'},
+      {id: 'grape', sound:'../assets/grape.mp3', path:'../assets/grape2.jpg', preklad:'hrozno',front:'../assets/fruits.png' }, 
+      {id: 'lemon', sound:'../assets/lemon.mp3', path:'../assets/lemon1.jpg', preklad:'citrón',front:'../assets/fruits.png' },
+      {id: 'lemon', sound:'../assets/lemon.mp3', path:'../assets/lemon2.jpg', preklad:'citrón' ,front:'../assets/fruits.png'},
+      {id: 'kiwi', sound:'../assets/kiwi.mp3', path:'../assets/kiwi1.jpg', preklad: 'kiwi',front:'../assets/fruits.png' },
+      {id: 'kiwi', sound:'../assets/kiwi.mp3', path:'../assets/kiwi2.jpg', preklad: 'kiwi',front:'../assets/fruits.png' },
+      {id: 'pear', sound:'../assets/pear.mp3', path:'../assets/pear1.jpg', preklad: 'hruška',front:'../assets/fruits.png' },
+      {id: 'pear', sound:'../assets/pear.mp3', path:'../assets/pear2.jpg', preklad: 'hruška',front:'../assets/fruits.png' },
+      {id: 'strawberry', sound:'../assets/strawberry.mp3', path:'../assets/strawberry1.jpg', preklad: 'jahoda',front:'../assets/fruits.png' },
+      {id: 'strawberry', sound:'../assets/strawberry.mp3', path:'../assets/strawberry2.jpg', preklad: 'jahoda',front:'../assets/fruits.png' },
     ];
 
     cardImages3 = [
-      'pDGNBK9A0sk',
-      'fYDrhbVlV1E',
-      'qoXgaF27zBc',
-      'b9drVB7xIOI',
-      'TQ-q5WAVHj0'
+      {id: 'bag', sound:'../assets/bag.mp3', path:'../assets/Bag.png', preklad:'taška', front:'../assets/school.jpg' },
+      {id: 'bag', sound:'../assets/bag.mp3', path:'../assets/Taska.png', preklad:'taška',front:'../assets/school.jpg' }, 
+      {id: 'pencil', sound:'../assets/pencil.mp3', path:'../assets/Pencil.png', preklad:'ceruzka' ,front:'../assets/school.jpg'},
+      {id: 'pencil', sound:'../assets/pencil.mp3', path:'../assets/Ceruzka.png', preklad:'ceruzka',front:'../assets/school.jpg' },
+      {id: 'pen', sound:'../assets/pen.mp3', path:'../assets/Pen.png', preklad: 'pero',front:'../assets/school.jpg' },
+      {id: 'pen', sound:'../assets/pen.mp3', path:'../assets/Pero.png', preklad: 'pero',front:'../assets/school.jpg' },
+      {id: 'rubber', sound:'../assets/rubber.mp3', path:'../assets/Rubber.png', preklad: 'guma',front:'../assets/school.jpg' },
+      {id: 'rubber', sound:'../assets/rubber.mp3', path:'../assets/Guma.png', preklad: 'guma',front:'../assets/school.jpg' },
+      {id: 'pencil case', sound:'../assets/pencilcase.mp3', path:'../assets/Percanik.png', preklad: 'peračník',front:'../assets/school.jpg' },
+      {id: 'pencil case', sound:'../assets/pencilcase.mp3', path:'../assets/Pencilcase.png', preklad: 'peračník',front:'../assets/school.jpg' },
     ];
 
     cardImages4 = [
-      'pDGNBK9A0sk',
-      'fYDrhbVlV1E',
-      'qoXgaF27zBc',
-      'b9drVB7xIOI',
-      'TQ-q5WAVHj0'
+      {id: 'China', sound:'../assets/china.mp3' ,front:'../assets/R.png',path:'../assets/china1_1.jpg', preklad:'Čína'},
+      {id: 'Germany',  sound:'../assets/germany.mp3' ,front:'../assets/R.png',path:'../assets/germany1.jpg', preklad: 'Nemecko'},
+      {id:'Sweden',sound:'../assets/sweden.mp3',front:'../assets/R.png',path:'../assets/sweden1.jpg', preklad:'Švédsko' },
+      {id:'Switzerland', sound:'../assets/switzerland.mp3',front:'../assets/R.png',path:'../assets/switzerland1.jpg', preklad: 'Švajčiarsko'},
+      {id:'Brazil', sound:'../assets/brazil.mp3',front:'../assets/R.png',path:'../assets/brazil1.jpg', preklad:'Brazília' },
+      {id: 'China', sound:'../assets/china.mp3' ,front:'../assets/R.png',path:'../assets/china2.jpg', preklad:'Čína'},
+      {id: 'Germany',  sound:'../assets/germany.mp3' ,front:'../assets/R.png',path:'../assets/germany2.jpg', preklad:'Nemecko'},
+      {id:'Sweden',sound:'../assets/sweden.mp3',front:'../assets/R.png',path:'../assets/sweden2.jpg', preklad:'Švédsko' },
+      {id:'Switzerland', sound:'../assets/switzerland.mp3',front:'../assets/R.png',path:'../assets/switzerland2.jpg', preklad:'Švajčiarsko' },
+      {id:'Brazil', sound:'../assets/brazil.mp3',front:'../assets/R.png',path:'../assets/brazil2.jpg', preklad:'Brazília'},
     ];
 
     cardImages=[];
@@ -53,7 +74,7 @@ export class LaunchComponent implements OnInit {
     cards: CardData[] = [];
     cards2: CardData[] = [];
     
-    myInt: number = 0; //prečo nemôže byť const??????????????????? Pretoze to nieje constanta a meni svoju hodnotu reaktivne, t.j. reaguje na zmeny (dynamicky)
+    myInt: number = 0; 
   
     @Output() messageEvent = new EventEmitter<CardData>();
     message: CardData; 
@@ -68,12 +89,16 @@ export class LaunchComponent implements OnInit {
       this.cards = [];
       this.cardImages.forEach((image) => {
         const cardData: CardData = {
-          imageId: image,
-          state: 'default'
+          imageId: image.id,
+          state: 'default',
+          sound: image.sound,
+          path: image.path,
+          preklad: image.preklad,
+          front: image.front
         };
   
         this.cards.push({ ...cardData });
-        this.cards.push({ ...cardData });
+        //this.cards.push({ ...cardData });
   
       });
   
@@ -82,31 +107,23 @@ export class LaunchComponent implements OnInit {
   }
 
   constructor(
-    private route: ActivatedRoute,
-    private HttpService: HttpServiceService,
-    private router: Router,
-    ) { };
+  private route: ActivatedRoute,
+  private HttpService: HttpServiceService,
+  private router: Router,
+  ) { };
   
 
   
-  ngOnInit(): void { //automaticky vždy sa zavolá ngOnit, preto sa doňho vkladá setupCards
-    if(this.HttpService.nickName === ''){this.router.navigate(['/dashboard']);}
+  ngOnInit(): void { 
       this.route.queryParams.subscribe(
         params => {
           this.title =  params['title'];
         }
+      if(this.HttpService.nickName === ''){this.router.navigate(['/dashboard']);}
       )
 
      this.fillingCards();
      this.setupCards();
-
-   /* this.route.queryParamMap.pipe(map((paramMap: ParamMap) => {
-      return paramMap.get('title');
-    }), distinctUntilChanged()).subscribe(val => {
-      this.param = val;
-      // having changedetection.onPush activated you would need to call the 
-      // cdR.markAsChecked() here
-    }) */
   }
 
   fillingCards(): void {
@@ -138,6 +155,7 @@ export class LaunchComponent implements OnInit {
   
   cardClicked(index: number): void {
     const cardInfo = this.cards[index];
+  
     if (cardInfo.state === 'default' && this.flippedCards.length < 2) {
       cardInfo.state = 'flipped';
       this.flippedCards.push(cardInfo);
@@ -161,7 +179,8 @@ export class LaunchComponent implements OnInit {
       cardOne.state = cardTwo.state = nextState;
       this.flippedCards = [];
       if(cardOne.state=='matched' && cardTwo.state=='matched') { 
-        this.playSound();
+        this.sound=cardOne.sound;
+        this.playSound(this.sound);
         this.myInt=this.myInt+100; 
         this.message=cardOne;
         this.cards2.push(this.message);
@@ -170,18 +189,17 @@ export class LaunchComponent implements OnInit {
        if(this.pocet==5) {
          /*title sa pošle do back-end-u*/
          this.vypisanie();
-         // ak dosiel az sem zapise sa a plus sa musi aktualizovat observable, pre povelenie categorii...
          console.log(this.title, this.myInt);
          this.HttpService.createNewApprovedCategory(this.title);
          this.HttpService.updateUserScore(this.myInt);
-        }
+         }
       }
   }, 1000);
   }
   
-  playSound() {
+  playSound(string) {
     let audio=new Audio();
-    audio.src="../assets/kidsSong.mp3";
+    audio.src=this.sound;
     audio.load(); audio.play();
   }
 
@@ -190,6 +208,3 @@ export class LaunchComponent implements OnInit {
   
     }
   }
-  
-  
-  
