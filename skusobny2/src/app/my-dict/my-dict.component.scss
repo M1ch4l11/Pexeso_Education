@@ -5,6 +5,12 @@
   display: flex;
   text-align: center;
 }
+.card-title{
+  text-align: center;
+  font-size: 48px;
+  background-color: var(--primaryColor);
+  padding: 15px;
+}
 
 .wrapper2 {
     width: calc(100% - 5rem);

@@ -41,12 +41,26 @@ export class FormComponentComponent implements OnInit {
       this.userHandler = 'login';
     }
     this.responseUser = this.httpService.responseUser;
+    const nickName = sessionStorage.getItem('username');
+    if(nickName){
+      this.responseUser = {
+        id: Number(sessionStorage.getItem('id')),
+        username: sessionStorage.getItem('username'),
+        password: sessionStorage.getItem('password'),
+        score: Number(sessionStorage.getItem('score')),
+      }
+      this.userHandler = 'profil';
+    }
+    else { console.log(' session dont have nickName', nickName);}
+
+   
   }
 
 
   doLogOut(): void {
     this.httpService.nickName = '';
     this.userHandler = 'login';
+    sessionStorage.clear();
   }
 
   doLogin(): void {
@@ -60,8 +74,8 @@ export class FormComponentComponent implements OnInit {
     console.log(this.userHandler, ' Je to tam');
     }
 
-    showRegForm(): void{
-      this.userHandler = 'register';
+    showForm(type: string): void{
+      type === 'Register' ? this.userHandler = 'register' : this.userHandler = 'login';
     }
 
     doRegister(): void {

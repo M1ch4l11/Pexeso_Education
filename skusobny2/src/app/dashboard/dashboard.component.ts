@@ -28,7 +28,7 @@ export class DashboardComponent implements OnInit {
     ) { }
 
   ngOnInit(): void {
-    if(this.httpService.nickName === ''){this.router.navigate(['/products']);}
+    if(sessionStorage.getItem('username') === null){this.router.navigate(['/products']);}
   }
 
 }

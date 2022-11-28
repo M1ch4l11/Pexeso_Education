@@ -11,7 +11,6 @@ export class HttpServiceService {
   approvedCategory: Observable<ResponseUserCategory[]> | undefined;
   createdUsersCategory: Observable<UsersCategory> | undefined;
   responseUserAktual: object;
-  // nickName treba vytiahnut
   nickName = '';
 
   URLCategoryByName = 'http://localhost:8080/category/AllCategoryByName?nickName=';
@@ -28,7 +27,7 @@ export class HttpServiceService {
  
 
   constructor(
-    private httpClient: HttpClient,
+    private httpClient: HttpClient
     ) { }
 
 
@@ -37,6 +36,13 @@ export class HttpServiceService {
         console.log(response);
         this.nickName = response.username;
         this.responseUser = response;
+        sessionStorage.setItem('id','' + this.responseUser.id);
+        sessionStorage.setItem('username',this.responseUser.username);
+        sessionStorage.setItem('password',this.responseUser.password);
+        sessionStorage.setItem('score','' + this.responseUser.score);
+      },
+      (error) => {
+        alert('User existuje, prihlaste sa.');
       });
     }
 
@@ -70,6 +76,11 @@ export class HttpServiceService {
       (response) => { 
         this.nickName = userName;
         this.responseUser = response;
+        console.log(this.responseUser.username)
+        sessionStorage.setItem('id','' + this.responseUser.id);
+        sessionStorage.setItem('username',this.responseUser.username);
+        sessionStorage.setItem('password',this.responseUser.password);
+        sessionStorage.setItem('score','' + this.responseUser.score);
         console.log(' Prihlaseny', response);
       },
       (error) => {

@@ -57,7 +57,7 @@ public arrays: Array<any> = [];
   // Animals, Home, Vehicles, Planes
 
   ngOnInit(): void {
-    if(this.httpService.nickName === ''){this.router.navigate(['/products']);}
+    if(sessionStorage.getItem('username') === null){this.router.navigate(['/products']);}
     this.httpService.getAllApprovedCategoryByName();
     this.httpService.approvedCategory.pipe(map(array => array.map(obj => obj.name))).subscribe( array => {
         this.responseCategoryNameArray = array as string[];
